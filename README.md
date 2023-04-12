@@ -57,7 +57,7 @@ https://user-images.githubusercontent.com/63622300/231536951-d2bbc987-1000-4f43-
 
 
  
-### Website [![Web App](https://img.shields.io/badge/%F0%9F%A4%97%20Search%20Ayah-red)](https://bublicenginee.onrender.com)
+### Website [![Web App](https://img.shields.io/badge/%F0%9F%A4%97%20Search%20Bublic-red)](https://bublicenginee.onrender.com)
 
 ## Author 
 

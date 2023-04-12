@@ -1,0 +1,92 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+    <style>
+    body {
+        background-image: url('https://yt3.ggpht.com/a/AATXAJwOwRA3KvstQd-kSj-uE1C0S3HVFl_ntfORUPEWNw=s900-c-k-c0xffffffff-no-rj-mo');
+        background-size: cover;
+    }
+
+    h1 {
+        color: brown;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    </style>
+</head>
+<body>
+<h1>Results for "{{ query }}"</h1>
+<ul>
+    {% for result in results %}
+    <li>{{ result['data_out'] }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+    <style>
+    
+body {
+  /* background-image: url('https://yt3.ggpht.com/a/AATXAJwOwRA3KvstQd-kSj-uE1C0S3HVFl_ntfORUPEWNw=s900-c-k-c0xffffffff-no-rj-mo'); */
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+
+    .page-title {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 36px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+.search-result {
+  background-color: #fffcfc;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="page-title">Search Results</h1>
+    </header>
+  
+    <main>
+      <!-- <ul class="search-results">
+        {% for result in results %}
+        <li class="search-results">{{ result['data_out'] }}</li>
+        {% endfor %}
+      </ul> -->
+    
+      <ul class="search-results">
+        {% for result in results %}
+        <li class="search-result">
+            {{ result['data_out'] }}
+        </li>
+        {% endfor %}
+      </ul>
+    </main>
+  
+    <footer>
+      <p>&copy; 2023 My Company. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
